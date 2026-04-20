@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(250, 249, 246);
+  color: rgb(28, 25, 23);
+  overflow-x: hidden;
+}
+
+a { text-decoration: none;
+    color: inherit; 
+}
+button { 
+  cursor: pointer; 
+  border: none; 
+  background: none; 
+  font-family: inherit; 
+}

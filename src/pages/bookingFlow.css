@@ -1,0 +1,94 @@
+.booking-page {
+  padding: 60px 5%;
+  background-color: rgb(249, 250, 251);
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+
+.booking-card {
+  background: rgb(255, 255, 255);
+  padding: 40px;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.booking-card h1 { 
+  margin-bottom: 10px; 
+  color: rgb(20, 83, 45); }
+.booking-card p { 
+  color: rgb(107, 114, 128); 
+  margin-bottom: 30px; 
+}
+
+.slot-section h3, .address-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.time-btn {
+  padding: 12px;
+  border: 2px solid rgb(229, 231, 235);
+  border-radius: 12px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.time-btn.active {
+  background-color: rgb(20, 83, 45);
+  color: rgb(255, 255, 255);
+  border-color: rgb(20, 83, 45);
+}
+
+.book-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid rgb(243, 244, 246);
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.btn-confirm {
+  width: 100%;
+  background-color: rgb(217, 119, 87);
+  color: rgb(255, 255, 255);
+  padding: 18px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .booking-page { 
+    padding: 40px 20px; 
+  }
+  .booking-card { 
+    padding: 25px 20px; 
+  }
+  .slot-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media (max-width: 450px) {
+  .slot-grid { 
+    grid-template-columns: 1fr; 
+  }
+  .book-input { 
+    padding: 12px; font-size: 0.9rem; 
+  }
+  .btn-confirm { 
+    padding: 15px; font-size: 1rem; 
+  }
+}
