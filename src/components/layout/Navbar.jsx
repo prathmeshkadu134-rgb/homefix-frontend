@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { FiTool, FiHome, FiSettings, FiCalendar, FiMenu, FiX, FiUser, FiLogOut } from 'react-icons/fi';
 import { useAuth } from '../../context/AuthContext'; 
 import toast from 'react-hot-toast'; 
-import './Navbar.css';
+import './navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
