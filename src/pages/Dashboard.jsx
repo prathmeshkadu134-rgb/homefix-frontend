@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import api from '../api/axiosConfig'; 
 import toast from 'react-hot-toast';
-import './dashboard.css';
+import './Dashboard.css';
 
 const Dashboard = () => {
   const { user } = useAuth();
